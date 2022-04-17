@@ -1,0 +1,9 @@
+﻿1.00 Recompilação do programa inicial feito por Ali Mirnia
+1.01 Adaptação para parar e continuar
+1.02 Mostra a hora caso passe de uma hora
+1.03 Correção da mostragem da hora, que não estava mostrando corretamente e aproveitei pra conhecer melhor o TimeSpan
+1.04 Tradução
+1.05 Formatar o tempo como '00:00:00'
+1.06 Diminuição do processamento
+
+1.07 Crônometro regressivo
