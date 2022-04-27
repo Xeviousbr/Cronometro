@@ -1,4 +1,4 @@
-namespace stopWatch
+namespace Cronometro
 {
     partial class AboutBox1
     {

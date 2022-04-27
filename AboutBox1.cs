@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Reflection;
 
-namespace stopWatch
+namespace Cronometro
 {
     partial class AboutBox1 : Form
     {

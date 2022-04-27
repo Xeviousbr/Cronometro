@@ -8,8 +8,8 @@
     <ProjectGuid>{01DB1474-F73F-4440-AB76-E76D8A07AB83}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>stopWatch</RootNamespace>
-    <AssemblyName>stopWatch</AssemblyName>
+    <RootNamespace>Cronometro</RootNamespace>
+    <AssemblyName>Cronometro</AssemblyName>
     <ApplicationIcon>tempario.ico</ApplicationIcon>
     <Win32Resource>
     </Win32Resource>

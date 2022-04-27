@@ -1,4 +1,4 @@
-namespace stopWatch
+namespace Cronometro
 {
     partial class mainFrm
     {
@@ -42,7 +42,6 @@ namespace stopWatch
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.ckSom = new System.Windows.Forms.CheckBox();
             this.btReinicio = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -75,7 +74,7 @@ namespace stopWatch
             // btnExit
             // 
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(76, 351);
+            this.btnExit.Location = new System.Drawing.Point(76, 336);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(120, 36);
             this.btnExit.TabIndex = 2;
@@ -87,7 +86,7 @@ namespace stopWatch
             // 
             this.BtnStart.Image = ((System.Drawing.Image)(resources.GetObject("BtnStart.Image")));
             this.BtnStart.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BtnStart.Location = new System.Drawing.Point(62, 239);
+            this.BtnStart.Location = new System.Drawing.Point(62, 224);
             this.BtnStart.Name = "BtnStart";
             this.BtnStart.Size = new System.Drawing.Size(150, 41);
             this.BtnStart.TabIndex = 1;
@@ -171,21 +170,12 @@ namespace stopWatch
             this.radioButton1.Text = "Progressivo";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(100, 207);
-            this.maskedTextBox1.Mask = "00:00:00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(78, 26);
-            this.maskedTextBox1.TabIndex = 5;
-            // 
             // ckSom
             // 
             this.ckSom.AutoSize = true;
             this.ckSom.Checked = true;
             this.ckSom.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckSom.Location = new System.Drawing.Point(114, 286);
+            this.ckSom.Location = new System.Drawing.Point(114, 271);
             this.ckSom.Name = "ckSom";
             this.ckSom.Size = new System.Drawing.Size(47, 17);
             this.ckSom.TabIndex = 6;
@@ -197,7 +187,7 @@ namespace stopWatch
             // 
             this.btReinicio.Enabled = false;
             this.btReinicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btReinicio.Location = new System.Drawing.Point(76, 309);
+            this.btReinicio.Location = new System.Drawing.Point(76, 294);
             this.btReinicio.Name = "btReinicio";
             this.btReinicio.Size = new System.Drawing.Size(120, 36);
             this.btReinicio.TabIndex = 7;
@@ -215,48 +205,55 @@ namespace stopWatch
             // 
             // udHora
             // 
-            this.udHora.Location = new System.Drawing.Point(89, 183);
+            this.udHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.udHora.Location = new System.Drawing.Point(62, 183);
             this.udHora.Name = "udHora";
-            this.udHora.Size = new System.Drawing.Size(35, 20);
+            this.udHora.Size = new System.Drawing.Size(45, 35);
             this.udHora.TabIndex = 9;
+            this.udHora.Visible = false;
             this.udHora.ValueChanged += new System.EventHandler(this.udHora_ValueChanged);
             // 
             // udMin
             // 
-            this.udMin.Location = new System.Drawing.Point(123, 183);
+            this.udMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.udMin.Location = new System.Drawing.Point(114, 183);
             this.udMin.Maximum = new decimal(new int[] {
             59,
             0,
             0,
             0});
             this.udMin.Name = "udMin";
-            this.udMin.Size = new System.Drawing.Size(35, 20);
+            this.udMin.Size = new System.Drawing.Size(45, 35);
             this.udMin.TabIndex = 10;
+            this.udMin.Visible = false;
+            this.udMin.ValueChanged += new System.EventHandler(this.udMin_ValueChanged);
             // 
             // udSeg
             // 
-            this.udSeg.Location = new System.Drawing.Point(157, 183);
+            this.udSeg.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.udSeg.Location = new System.Drawing.Point(166, 183);
             this.udSeg.Maximum = new decimal(new int[] {
             59,
             0,
             0,
             0});
             this.udSeg.Name = "udSeg";
-            this.udSeg.Size = new System.Drawing.Size(35, 20);
+            this.udSeg.Size = new System.Drawing.Size(45, 35);
             this.udSeg.TabIndex = 11;
+            this.udSeg.Visible = false;
+            this.udSeg.ValueChanged += new System.EventHandler(this.udSeg_ValueChanged);
             // 
             // mainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 393);
+            this.ClientSize = new System.Drawing.Size(278, 378);
             this.Controls.Add(this.udSeg);
             this.Controls.Add(this.udMin);
             this.Controls.Add(this.udHora);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btReinicio);
             this.Controls.Add(this.ckSom);
-            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.BtnStart);
@@ -292,7 +289,6 @@ namespace stopWatch
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.CheckBox ckSom;
         private System.Windows.Forms.Button btReinicio;
         private System.Windows.Forms.TextBox textBox1;
