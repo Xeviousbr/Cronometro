@@ -48,11 +48,13 @@ namespace Cronometro
             this.udHora = new System.Windows.Forms.NumericUpDown();
             this.udMin = new System.Windows.Forms.NumericUpDown();
             this.udSeg = new System.Windows.Forms.NumericUpDown();
+            this.trkVol = new System.Windows.Forms.TrackBar();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.udHora)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.udMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.udSeg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkVol)).BeginInit();
             this.SuspendLayout();
             // 
             // watchLb
@@ -169,13 +171,14 @@ namespace Cronometro
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Progressivo";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // ckSom
             // 
             this.ckSom.AutoSize = true;
             this.ckSom.Checked = true;
             this.ckSom.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckSom.Location = new System.Drawing.Point(114, 271);
+            this.ckSom.Location = new System.Drawing.Point(62, 271);
             this.ckSom.Name = "ckSom";
             this.ckSom.Size = new System.Drawing.Size(47, 17);
             this.ckSom.TabIndex = 6;
@@ -243,20 +246,32 @@ namespace Cronometro
             this.udSeg.Visible = false;
             this.udSeg.ValueChanged += new System.EventHandler(this.udSeg_ValueChanged);
             // 
+            // trkVol
+            // 
+            this.trkVol.Enabled = false;
+            this.trkVol.Location = new System.Drawing.Point(102, 255);
+            this.trkVol.Name = "trkVol";
+            this.trkVol.Size = new System.Drawing.Size(109, 45);
+            this.trkVol.TabIndex = 12;
+            this.trkVol.TickFrequency = 10000;
+            this.trkVol.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.trkVol.Visible = false;
+            // 
             // mainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(278, 378);
+            this.Controls.Add(this.ckSom);
+            this.Controls.Add(this.btReinicio);
+            this.Controls.Add(this.BtnStart);
+            this.Controls.Add(this.trkVol);
             this.Controls.Add(this.udSeg);
             this.Controls.Add(this.udMin);
             this.Controls.Add(this.udHora);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btReinicio);
-            this.Controls.Add(this.ckSom);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.BtnStart);
             this.Controls.Add(this.watchLb);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -272,6 +287,7 @@ namespace Cronometro
             ((System.ComponentModel.ISupportInitialize)(this.udHora)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.udMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.udSeg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkVol)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,6 +313,7 @@ namespace Cronometro
         private System.Windows.Forms.NumericUpDown udHora;
         private System.Windows.Forms.NumericUpDown udMin;
         private System.Windows.Forms.NumericUpDown udSeg;
+        private System.Windows.Forms.TrackBar trkVol;
     }
 }
 

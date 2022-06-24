@@ -55,6 +55,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PVS.MediaPlayer, Version=0.9.9.40, Culture=neutral, PublicKeyToken=1cda2f5602567ced, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\XeviousPlayer\Nova pasta\PVS.MediaPlayer All Source Code\PVSPlayerExample\PVSPlayerExample\bin\PVS.MediaPlayer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
