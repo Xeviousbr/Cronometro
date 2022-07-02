@@ -248,7 +248,6 @@ namespace Cronometro
             // 
             // trkVol
             // 
-            this.trkVol.Enabled = false;
             this.trkVol.Location = new System.Drawing.Point(102, 255);
             this.trkVol.Name = "trkVol";
             this.trkVol.Size = new System.Drawing.Size(109, 45);
