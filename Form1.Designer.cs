@@ -185,6 +185,7 @@ namespace Cronometro
             this.ckSom.Text = "Som";
             this.ckSom.UseVisualStyleBackColor = true;
             this.ckSom.Visible = false;
+            this.ckSom.CheckedChanged += new System.EventHandler(this.ckSom_CheckedChanged);
             // 
             // btReinicio
             // 
