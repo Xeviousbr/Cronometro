@@ -280,6 +280,7 @@ namespace Cronometro
             this.Name = "mainFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cronometro";
+            this.Load += new System.EventHandler(this.mainFrm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
