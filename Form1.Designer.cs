@@ -197,6 +197,7 @@ namespace Cronometro
             this.btReinicio.TabIndex = 7;
             this.btReinicio.Text = "Zerar";
             this.btReinicio.UseVisualStyleBackColor = true;
+            this.btReinicio.Click += new System.EventHandler(this.btReinicio_Click);
             // 
             // textBox1
             // 
