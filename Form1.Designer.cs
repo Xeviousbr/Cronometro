@@ -129,6 +129,7 @@ namespace Cronometro
             this.mnMaTempo.Name = "mnMaTempo";
             this.mnMaTempo.Size = new System.Drawing.Size(92, 20);
             this.mnMaTempo.Text = "Somar Tempo";
+            this.mnMaTempo.Click += new System.EventHandler(this.mnMaTempo_Click);
             // 
             // mnMeTempo
             // 
