@@ -137,6 +137,7 @@ namespace Cronometro
             this.mnMeTempo.Name = "mnMeTempo";
             this.mnMeTempo.Size = new System.Drawing.Size(99, 20);
             this.mnMeTempo.Text = "Subtrair Tempo";
+            this.mnMeTempo.Click += new System.EventHandler(this.mnMeTempo_Click);
             // 
             // groupBox1
             // 
