@@ -73,6 +73,7 @@ namespace Cronometro
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(56, 20);
             this.maskedTextBox1.TabIndex = 0;
+            this.maskedTextBox1.Text = "000100";
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
             // FTempo
