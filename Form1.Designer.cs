@@ -47,6 +47,7 @@ namespace Cronometro
             this.udHora = new System.Windows.Forms.NumericUpDown();
             this.udMin = new System.Windows.Forms.NumericUpDown();
             this.udSeg = new System.Windows.Forms.NumericUpDown();
+            this.ckDesliga = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.udHora)).BeginInit();
@@ -233,11 +234,24 @@ namespace Cronometro
             this.udSeg.Visible = false;
             this.udSeg.ValueChanged += new System.EventHandler(this.udSeg_ValueChanged);
             // 
+            // ckDesliga
+            // 
+            this.ckDesliga.AutoSize = true;
+            this.ckDesliga.Location = new System.Drawing.Point(232, 201);
+            this.ckDesliga.Name = "ckDesliga";
+            this.ckDesliga.Size = new System.Drawing.Size(34, 17);
+            this.ckDesliga.TabIndex = 12;
+            this.ckDesliga.Text = "D";
+            this.ckDesliga.UseVisualStyleBackColor = true;
+            this.ckDesliga.Visible = false;
+            this.ckDesliga.CheckedChanged += new System.EventHandler(this.ckDesliga_CheckedChanged);
+            // 
             // mainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(278, 357);
+            this.Controls.Add(this.ckDesliga);
             this.Controls.Add(this.btReinicio);
             this.Controls.Add(this.BtnStart);
             this.Controls.Add(this.udSeg);
@@ -286,6 +300,7 @@ namespace Cronometro
         private System.Windows.Forms.NumericUpDown udHora;
         private System.Windows.Forms.NumericUpDown udMin;
         private System.Windows.Forms.NumericUpDown udSeg;
+        private System.Windows.Forms.CheckBox ckDesliga;
     }
 }
 
